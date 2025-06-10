@@ -1,0 +1,177 @@
+import { createTheme } from "@mantine/core"
+
+const theme = createTheme({
+	fontFamily: "Rubik",
+	defaultRadius: "md",
+	breakpoints: {
+		xs: "30em",
+		sm: "48em",
+		md: "64em",
+		lg: "74em",
+		xl: "90em",
+	},
+	radius: {
+		md: "12px",
+		lg: "24px",
+		xl: "50%",
+	},
+	colors: {
+		blue: [
+			"#4a9eff",
+			"#3d8fe6",
+			"#3080cc",
+			"#2371b3",
+			"#16213e",
+			"#1a2570",
+			"#111a55",
+			"#0c1445",
+			"#0a0f1a",
+			"#050810",
+		],
+		purple: [
+			"#a78bfa",
+			"#8b5cf6",
+			"#7c3aed",
+			"#6d28d9",
+			"#5b21b6",
+			"#4c1d95",
+			"#1f1b4b",
+			"#1a1a3a",
+			"#0f0f2a",
+			"#0a0a1a",
+		],
+		lilac: [
+			"#e9d5ff",
+			"#d8b4fe",
+			"#c084fc",
+			"#a855f7",
+			"#9333ea",
+			"#7e22ce",
+			"#1a2238",
+			"#0f2942",
+			"#0a1a2a",
+			"#050a15",
+		],
+		green: [
+			"#e8f9f8",
+			"#dfeceb",
+			"#c5d4d3",
+			"#a8bcbb",
+			"#8fa7a6",
+			"#7e9a99",
+			"#749492",
+			"#61817f",
+			"#527371",
+			"#3f6463",
+		],
+		red: [
+			"#ff4d4d",
+			"#ff3333",
+			"#ff1a1a",
+			"#ff0000",
+			"#e60000",
+			"#cc0000",
+			"#b30000",
+			"#990000",
+			"#800000",
+			"#660000",
+		],
+		gray: [
+			"#f4f4f6",
+			"#e6e6e6",
+			"#cacaca",
+			"#a0a0a0",
+			"#84838b",
+			"#7b7b86",
+			"#696974",
+			"#5d5d68",
+			"#50505d",
+			"#333333",
+		],
+		white: [
+			"#ffffff",
+			"#f5f5f5",
+			"#ebebeb",
+			"#e0e0e0",
+			"#d6d6d6",
+			"#cccccc",
+			"#c2c2c2",
+			"#b8b8b8",
+			"#adadad",
+			"#a3a3a3",
+		],
+		overlay: [
+			"rgba(0, 0, 0, 0.07)",
+			"rgba(0, 0, 0, 0.14)",
+			"rgba(0, 0, 0, 0.21)",
+			"rgba(0, 0, 0, 0.28)",
+			"rgba(0, 0, 0, 0.35)",
+			"rgba(0, 0, 0, 0.42)",
+			"rgba(0, 0, 0, 0.49)",
+			"rgba(0, 0, 0, 0.56)",
+			"rgba(0, 0, 0, 0.63)",
+			"rgba(0, 0, 0, 0.7)",
+		],
+		yellow: [
+			"#fcf9e7",
+			"#f5f1d7",
+			"#e9e1b1",
+			"#ddd188",
+			"#d3c364",
+			"#ccba4e",
+			"#c9b541",
+			"#b19f32",
+			"#9e8d28",
+			"#887a1b",
+		],
+	},
+	cursorType: "pointer",
+	headings: {
+		sizes: {
+			h1: {
+				fontSize: "36px",
+				fontWeight: "700",
+				lineHeight: "1.1",
+			},
+			h2: {
+				fontSize: "24px",
+				fontWeight: "400",
+			},
+		},
+	},
+	components: {
+		Button: {
+			defaultProps: {
+				h: 40,
+				fw: "500",
+			},
+		},
+		Input: {
+			defaultProps: {
+				h: 40,
+				size: "md",
+				fw: "500",
+			},
+		},
+		PinInput: {
+			defaultProps: {
+				size: "md",
+				radius: "md",
+				placeholder: "0",
+			},
+		},
+		InputLabel: {
+			defaultProps: {
+				fw: "400",
+			},
+		},
+		InputError: {
+			defaultProps: {
+				c: "red.0",
+			},
+		},
+	},
+})
+
+export default theme
+

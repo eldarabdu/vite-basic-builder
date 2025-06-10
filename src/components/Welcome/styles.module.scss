@@ -1,0 +1,110 @@
+@use "@/utils" as *;
+
+.welcomeOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--mantine-color-overlay-2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	animation: fadeIn 0.5s ease-out;
+}
+
+.welcomeModal {
+	background: linear-gradient(
+		135deg,
+		var(--mantine-color-purple-8) 0%,
+		var(--mantine-color-lilac-7) 100%
+	);
+	padding: toRem(32px);
+	border-radius: var(--mantine-radius-lg);
+	text-align: center;
+	box-shadow: 0 0 toRem(30px) var(--mantine-color-overlay-2);
+	max-width: 90%;
+	width: toRem(400px);
+	border: 1px solid var(--mantine-color-gray-8);
+	animation: slideUp 0.5s ease-out;
+}
+
+.title {
+	color: var(--mantine-color-white-0);
+	font-size: toRem(40px);
+	margin-bottom: toRem(0.4px);
+	font-weight: 700;
+	text-shadow: 0 toRem(2px) toRem(4px) var(--mantine-color-overlay-2);
+}
+
+.subtitle {
+	color: var(--mantine-color-gray-3);
+	font-size: toRem(18px);
+	margin-bottom: toRem(24px);
+	line-height: 1.5;
+}
+
+.message {
+	color: var(--mantine-color-blue-0);
+	font-size: toRem(24px);
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: toRem(1px);
+	animation: pulse 2s ease-in-out infinite;
+}
+
+.githubLink {
+	color: var(--mantine-color-gray-3);
+	font-size: toRem(14px);
+	text-decoration: none;
+	transition: color 0.3s ease;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: toRem(8px);
+
+	@include hover {
+		color: var(--mantine-color-blue-0);
+	}
+}
+
+.linkIcon {
+	width: toRem(16px);
+	height: toRem(16px);
+	transform: rotate(180deg);
+	color: inherit;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(toRem(20px));
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.01);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+

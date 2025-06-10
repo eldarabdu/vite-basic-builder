@@ -1,0 +1,31 @@
+@use "@/utils/functions" as *;
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--mantine-font-family), sans-serif;
+	font-size: toRem(16px);
+	overflow-x: hidden;
+	overflow-y: auto;
+	user-select: none;
+}
+
+button {
+	border: none;
+	background: none;
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
