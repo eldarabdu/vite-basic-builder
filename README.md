@@ -12,12 +12,6 @@ git clone https://github.com/eldarabdu/vite-basic-builder.git
 cd vite-basic-builder
 ```
 
-or
-
-```bash
-npm create vite-basic-builder
-```
-
 ### Install dependencies
 
 ```bash
@@ -152,4 +146,3 @@ src/
 - ESLint configuration
 - Development server with hot reload
 - Production build optimization
-
