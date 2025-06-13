@@ -2,6 +2,8 @@
 	"name": "vite-basic-builder",
 	"version": "0.0.1",
 	"type": "module",
+	"license": "MIT",
+	"author": "Eldar Abdu",
 	"description": "A modern Vite + React + TypeScript + Mantine UI starter template with best practices",
 	"keywords": [
 		"vite",
@@ -12,8 +14,6 @@
 		"template",
 		"boilerplate"
 	],
-	"author": "Eldar Abdu",
-	"license": "MIT",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",
@@ -46,4 +46,3 @@
 		"vite-plugin-svgr": "^4.3.0"
 	}
 }
-
