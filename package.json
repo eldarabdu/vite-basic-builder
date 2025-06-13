@@ -1,8 +1,19 @@
 {
 	"name": "vite-basic-builder",
-	"private": true,
 	"version": "0.0.1",
 	"type": "module",
+	"description": "A modern Vite + React + TypeScript + Mantine UI starter template with best practices",
+	"keywords": [
+		"vite",
+		"react",
+		"typescript",
+		"mantine",
+		"starter",
+		"template",
+		"boilerplate"
+	],
+	"author": "Eldar Abdu",
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc -b && vite build",

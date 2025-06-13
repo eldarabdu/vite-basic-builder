@@ -1,6 +1,7 @@
 # Vite Basic Builder
 
-Modern template for React applications using Vite, TypeScript, Mantine, and SCSS modules.
+Modern template for React applications using Vite, TypeScript, React Router Dom, Mantine, and SCSS
+modules.
 
 ## 🚀 Quick Start
 
@@ -9,6 +10,12 @@ Modern template for React applications using Vite, TypeScript, Mantine, and SCSS
 ```bash
 git clone https://github.com/eldarabdu/vite-basic-builder.git
 cd vite-basic-builder
+```
+
+or
+
+```bash
+npm create vite-basic-builder
 ```
 
 ### Install dependencies
@@ -80,9 +87,10 @@ The project uses modular SCSS files with support for:
 src/
 ├── configs/
 │   └── style.config.ts   # Mantine theme configuration
-├── utils/
-│   ├── functions.scss    # SCSS functions
-│   └── mixins.scss      # SCSS mixins
+├── styles/
+│   ├── _functions.scss    # SCSS functions
+│   ├── _mixins.scss      # SCSS mixins
+│   └── index.scss       # SCSS root
 └── components/
     └── ComponentName/
         └── styles.module.scss  # Component styles
@@ -128,7 +136,9 @@ src/
 ├── components/      # React components
 ├── configs/         # Configuration files
 ├── pages/           # Page components
-├── utils/           # Utility functions and styles
+├── styles/          # Utility functions and styles
+├── utils/           # Utility TypeScript functions
+├── index.scss       # Root styles
 └── App.tsx          # Root component
 ```
 
