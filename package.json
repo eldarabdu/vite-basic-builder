@@ -1,6 +1,7 @@
 {
 	"name": "vite-basic-builder",
 	"version": "0.0.1",
+	"private": true,
 	"type": "module",
 	"license": "MIT",
 	"author": "Eldar Abdu",
